@@ -47,20 +47,20 @@ def comments(id):
         }
     }
 
-class Blog(BaseModel):
-    title: str
-    body: str
-    published: Optional[bool]
+# class Blog(BaseModel):
+#     title: str
+#     body: str
+#     published: Optional[bool]
 
-@app.post('/blog')
-def create_blog(request: Blog):
+# @app.post('/blog')
+# def create_blog(request: Blog):
     
-    payload = {
-        "data" : {
-            "message" : f"{request.title} created!",
-            "status" : 201
-        }
-    }
+#     payload = {
+#         "data" : {
+#             "message" : f"{request.title} created!",
+#             "status" : 201
+#         }
+#     }
     
-    return payload
-    
+#     return payload
+
